@@ -11,20 +11,18 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
+        
     </head>
     <body>
-        <div id="retainable-rss-embed" 
-            data-rss="https://medium.com/feed/retainable,
-            https://medium.com/feed/vue-mastery"
-            data-maxcols="3" 
-            data-layout="grid" 
-            data-poststyle="inline" 
-            data-readmore="Read the rest" 
-            data-buttonclass="btn btn-primary" 
-            data-offset="-100">
-        </div>
+    <h1>Blog</h1>
+        <div id="medium-widget"></div>
         
-        <script src="" async defer></script>
-        
+
+
+
+    <div id="medium-widget"></div>
+    <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+    <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@mosesmbadi","postsPerLine":3,"limit":10,"picture":"small","fields":["description","author","claps","publishAt"],"ratio":"landscape"}})</script>
+
     </body>
 </html>

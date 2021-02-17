@@ -2,5 +2,5 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/unplugge/symbitech
-    - /bin/cp index.html $DEPLOYPATH
+    - index.html $DEPLOYPATH
     
